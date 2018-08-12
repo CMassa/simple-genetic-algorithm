@@ -4,7 +4,7 @@ This is a simple genetic algorithm demonstration, just change the parameters ins
 
 Modifiable parameters represent the following concepts:
 
-	DNA (string) - DNA Sequence we want to obtain from the population
+	DNA (string) - Char sequence we want to obtain from the population
 	POPULATION_SIZE (integer, default = 500) - Number of inhabitants of the population
 	MUTATION_RATE (float, default = 0.01f) - Mutation ratio of an individual's genes
 
@@ -19,3 +19,5 @@ When you execute the script it will start printing the generation number on the 
 	...
 	Generation number: 245 | Best result: AGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTC
 	Found sequence: AGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTCAGCTCAGTC
+
+Note: despite using the AGTC characters in the sequence we want to find, it is intended that the program look for all types of ASCII characters, since it is designed to work in numerous scenarios besides the obvious
