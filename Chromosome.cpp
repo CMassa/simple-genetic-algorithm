@@ -7,7 +7,7 @@ Chromosome::Chromosome() {
 
 Chromosome::Chromosome(int gene_size) {
 	for(int i=0; i<gene_size; ++i) {
-		genes += (char) get_random_int_between(33, 127);
+		genes += get_random_nucleobase();
 	}
 }
 
@@ -15,7 +15,7 @@ void Chromosome::mutate(float mutation_rate) {
 	for(int i=0;i<genes.size();++i) {
 		float random = get_random_float_between(.0f, 1.0f);
 		if(mutation_rate > random) {
-			genes[i] = (char) get_random_int_between(33, 127);
+			genes[i] = get_random_nucleobase();
 		}
 	}
 }
